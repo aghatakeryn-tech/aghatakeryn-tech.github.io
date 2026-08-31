@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aghata · Links</title>
+<style>
+  :root{
+    --bg: #2b1720;
+    --bg-card: #3c2130;
+    --rose: #f2a6c1;
+    --rose-deep: #d76a96;
+    --cream: #fceef2;
+    --cream-dim: #e0b8c8;
+    --gold: #eec6dd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 50% -10%, #52293b 0%, var(--bg) 55%);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--cream);
+    display:flex;
+    justify-content:center;
+    padding: 48px 20px 60px;
+  }
+
+  .page{
+    width:100%;
+    max-width: 420px;
+    text-align:center;
+  }
+
+  .avatar{
+    width:92px;
+    height:92px;
+    border-radius:50%;
+    margin: 0 auto 18px;
+    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    color: var(--cream);
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--rose-deep);
+  }
+
+  h1{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.3px;
+    margin: 0 0 4px;
+  }
+
+  .handle{
+    color: var(--cream-dim);
+    font-size: 14px;
+    margin: 0 0 14px;
+  }
+
+  .bio{
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--cream-dim);
+    margin: 0 0 34px;
+    padding: 0 8px;
+  }
+
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+  }
+
+  a.link{
+    display:block;
+    text-decoration:none;
+    color: var(--cream);
+    background: var(--bg-card);
+    border: 1px solid rgba(216,138,154,0.25);
+    border-radius: 14px;
+    padding: 16px 20px;
+    font-size: 15px;
+    text-align:left;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+  }
+
+  a.link:active{
+    transform: scale(0.98);
+  }
+
+  a.link.featured{
+    background: linear-gradient(135deg, rgba(216,138,154,0.16), rgba(224,173,92,0.12));
+    border-color: var(--gold);
+  }
+
+  .link-title{
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .link-sub{
+    font-size: 12.5px;
+    color: var(--cream-dim);
+  }
+
+  .disclosure{
+    margin-top: 30px;
+    font-size: 11.5px;
+    line-height: 1.6;
+    color: rgba(201,184,176,0.65);
+    padding: 0 6px;
+  }
+
+  .disclosure strong{
+    color: rgba(224,173,92,0.85);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="avatar">A</div>
+    <h1>Aghata</h1>
+    <p class="handle">@aghatakcs</p>
+    <p class="bio">🛍️ achadinhos, 💪 treino, 💰 renda extra — tudo aqui</p>
+
+    <div class="links">
+      <a class="link featured" href="https://ai.hub.xyz/r/KERYN1">
+        <div class="link-title">Minute — renda extra fazendo tarefas 💰</div>
+        <div class="link-sub">app que uso para ganhar um dinheiro a mais no dia a dia</div>
+      </a>
+
+      <a class="link" href="https://collshp.com/keryn?view=storefront">
+        <div class="link-title">Achadinhos Shopee 🛍️</div>
+        <div class="link-sub">tudo que eu uso e recomendo, direto da minha loja</div>
+      </a>
+
+      <a class="link" href="#">
+        <div class="link-title">E-book Treino</div>
+        <div class="link-sub">guia completo</div>
+      </a>
+    </div>
+
+    <p class="disclosure">Contém links de afiliado.</p>
+  </div>
+</body>
+</html>
